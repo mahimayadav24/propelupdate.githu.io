@@ -137,7 +137,7 @@ body, html {
     }
 
     .bg_bl {
-        height: 260px;
+        height: 160px;
 
     }
 
@@ -511,9 +511,8 @@ input[type="color"]::-webkit-color-swatch {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     height: auto;
-    max-width: 80%;
+    max-width: 65%;
     margin: auto;
-    grid-gap: 2em;
 }
 
 
@@ -546,9 +545,14 @@ input[type="color"]::-webkit-color-swatch {
     cursor: pointer;
 }
 
+.ls-grs img{
+    transform: translateY(4px);
+}
+
 .light-green img {
     width: 90%;
 }
+
 
 @media screen and (max-width: 992px) {
     .grid-fr-ss {
