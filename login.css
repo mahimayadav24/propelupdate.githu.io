@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+@font-face {
+    font-family: NexaDemo__Bold;
+    src: url('../Fonts/Nexa/Nexa/Commercial/Nexa_V2_2020/TTF/NexaDemo-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: Riley__Regular;
+    src: url('../Fonts/riley-a-modern-typeface-2021-08-26-17-52-56-utc/Riley/Riley-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat__SemiBold;
+    src: url('../Fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+.sect {
+    background-image: url('../Assets/Rectangle 218.png');
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px;
+    padding-bottom: 3rem;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60%;
+    margin: auto;
+    height: 100%;
+
+}
+
+
+.brand-img {
+    background: linear-gradient(326.64deg, rgba(255, 255, 255, 0.7) 1.44%, rgba(255, 255, 255, 0.4) 106.8%);
+    box-shadow: 0px 24px 40px rgba(178, 204, 184, 0.2);
+    backdrop-filter: blur(45px);
+    border-radius: 40px;
+    padding: 50px 50px 80px 50px;
+    position: relative;
+    top: 0;
+}
+
+.img1 {
+    position: absolute;
+    left: -51%;
+    width: 71%;
+    bottom: 0%;
+
+}
+
+.img2 {
+    position: absolute;
+    width: 47%;
+    right: -47%;
+    bottom: 0%;
+}
+
+.brand-img p {
+    font-family: 'Riley__Regular';
+    font-size: calc(20pt + 0.15vw);
+    text-align: center;
+}
+
+.brand-img p span {
+    font-family: 'Montserrat__SemiBold';
+    font-size: calc(12pt + 0.15vw);
+}
+
+.brand-img p img {
+    margin: 0px 15px;
+}
+
+
+.brand-img h5 {
+    font-size: calc(10pt + 0.15vw);
+    font-family: 'NexaDemo__Bold';
+    color: rgba(77, 77, 77, 1);
+    line-height: 1.4195;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(238, 251, 238, 1);
+    background-clip: padding-box;
+    border: 1px dashed rgba(147, 195, 147, 1);
+    font-size: calc(9pt + 0.15vw);
+    font-family: 'NexaDemo__Bold';
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: rgba(238, 251, 238, 1);
+}
+
+
+.brand-img label {
+    font-size: calc(10pt + 0.15vw);
+    font-family: 'NexaDemo__Bold';
+    color: rgba(77, 77, 77, 1);
+    letter-spacing: 0.03em;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(77, 77, 77, 1);
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(77, 77, 77, 1);
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(77, 77, 77, 1);
+}
+
+
+.max-button button {
+    width: 100%;
+    border: none;
+    background: linear-gradient(87.75deg, #E92123 14.51%, #FF4345 107.19%);
+    box-shadow: 0px 20px 40px rgba(250, 124, 125, 0.18);
+    border-radius: 13px;
+    padding: 13px;
+    color: #ffffff;
+    font-size: calc(10pt + 0.15vw);
+    font-family: 'NexaDemo__Bold';
+}
+
+.max-button button:hover {
+    transform: translateY(-2px);
+    transition: .3s ease-in-out;
+    background: linear-gradient(87.62deg, #7339CA 4.39%, #A95CF4 98.97%);
+}
+
+.max-button {
+    text-align: center;
+}
+
+.max-button img {
+    margin: 0px 10px;
+    transform: translateY(-3px);
+}
+
+.max-button p {
+    font-size: calc(8pt + 0.15vw);
+    font-family: 'NexaDemo__Bold';
+    color: rgba(77, 77, 77, 1);
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1280px) {
+    .card-text {
+        max-width: 85%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .card-text {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 538px) {
+    .brand-img {
+        padding: 50px 20px 80px 20px;
+    }
+
+    .card-text h5 br {
+        display: none;
+    }
+}
